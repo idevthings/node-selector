@@ -1,0 +1,8 @@
+<div>
+  <app-node
+    [node]="node"
+    (onNodeSelected)="selectNode($event)"
+    *ngFor="let node of nodes"
+  ></app-node>
+  <app-node (click)="reset()"> </app-node>
+</div>

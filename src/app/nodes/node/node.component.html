@@ -1,0 +1,13 @@
+<div>
+  <button
+    *ngIf="node?.name; else elseBlock"
+    mat-button
+    color="primary"
+    (click)="nodeClicked()"
+  >
+    {{ node?.name }}
+  </button>
+  <ng-template #elseBlock>
+    <button mat-button color="primary">Reset</button></ng-template
+  >
+</div>
